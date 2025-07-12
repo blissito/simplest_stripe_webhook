@@ -1,0 +1,19 @@
+{
+  "imports": {
+    "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
+    "stripe": "https://esm.sh/stripe@14.12.0?target=deno"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --watch main.ts",
+    "start": "deno run --allow-net --allow-env main.ts",
+    "deploy": "./deploy.sh"
+  },
+  "deploy": {
+    "project": "597dc17c-4e3c-4e7e-b421-22da4a64b0c1",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
