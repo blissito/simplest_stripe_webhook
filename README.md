@@ -1,5 +1,7 @@
 # Stripe Webhook - Deno
 
+### by @blissito with love for @brendi projects
+
 Un webhook simple para Stripe que solo recibe eventos `payment_intent.succeeded` usando Deno.
 
 ## 🚀 Deploy
@@ -41,11 +43,24 @@ deno task dev
 deno run --allow-net test-webhook.ts
 ```
 
+## 🚀 Características
+
+- ✅ **Webhook de Stripe** - Procesa pagos exitosos
+- ✅ **Notificaciones por email** - Envía correos a interesados
+- ✅ **Estadísticas** - Monitorea el uso del webhook
+- ✅ **Logs** - Registra todas las actividades
+- ✅ **Testing** - Endpoint para pruebas locales
+- ✅ **Health Check** - Monitoreo de salud del servicio
+
 ## 📝 Endpoints
 
 - `GET /` - Mensaje personalizado
 - `GET /health` - Health check
 - `POST /webhook` - Webhook de Stripe
+- `POST /email` - Enviar correo a interesados
+- `GET /stats` - Estadísticas del webhook
+- `GET /logs` - Ver logs recientes
+- `POST /test` - Probar webhook localmente
 
 ## 🔒 Seguridad
 
@@ -53,6 +68,32 @@ deno run --allow-net test-webhook.ts
 - ✅ Solo procesa `payment_intent.succeeded`
 - ✅ Variables de entorno para claves secretas
 
+## 📧 Email Notifications
+
+### Enviar correo a interesados:
+
+```bash
+curl -X POST https://neat-camel-59-7fgp0hcj6pzd.deno.dev/email \
+  -H "Content-Type: application/json" \
+  -d '{
+    "to": "interesado@example.com",
+    "subject": "Nuevo pago recibido",
+    "message": "Se ha procesado un nuevo pago exitoso"
+  }'
+```
+
+### Ver estadísticas:
+
+```bash
+curl https://neat-camel-59-7fgp0hcj6pzd.deno.dev/stats
+```
+
+### Ver logs:
+
+```bash
+curl https://neat-camel-59-7fgp0hcj6pzd.deno.dev/logs
+```
+
 ---
 
-Made with ❤️ by @blissito
+Made with 🚬🫁 by @blissito
