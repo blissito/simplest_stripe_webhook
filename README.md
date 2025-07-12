@@ -4,6 +4,8 @@
 
 Un webhook simple para Stripe que solo recibe eventos `payment_intent.succeeded` usando Deno.
 
+![conspiración](https://images.pexels.com/photos/632688/pexels-photo-632688.jpeg)
+
 ## 🚀 Deploy
 
 ```bash
