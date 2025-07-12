@@ -96,4 +96,27 @@ curl https://neat-camel-59-7fgp0hcj6pzd.deno.dev/logs
 
 ---
 
+## 📋 Tareas Pendientes
+
+### 🔧 Por implementar:
+
+- [ ] **Envío de correos automático** - Enviar email cuando se reciba `payment_intent.succeeded`
+- [ ] **Endpoint `/stats`** - Estadísticas reales del webhook
+- [ ] **Endpoint `/logs`** - Sistema de logs persistente
+- [ ] **Endpoint `/email`** - Envío manual de correos
+- [ ] **Endpoint `/test`** - Testing del webhook
+- [ ] **Base de datos** - Almacenar pagos y estadísticas
+- [ ] **Autenticación** - Proteger endpoints sensibles
+- [ ] **Rate limiting** - Limitar requests por IP
+- [ ] **Monitoreo** - Alertas cuando falle el webhook
+
+### 🎯 Próximas mejoras:
+
+- [ ] Integración con servicios de email (SendGrid, Mailgun)
+- [ ] Dashboard web para ver estadísticas
+- [ ] Webhook signature verification más robusta
+- [ ] Soporte para más eventos de Stripe
+
+---
+
 Made with 🚬🫁 by @blissito
