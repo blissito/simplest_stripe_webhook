@@ -112,7 +112,7 @@ curl https://neat-camel-59-7fgp0hcj6pzd.deno.dev/logs
 
 ### 🎯 Próximas mejoras:
 
-- [ ] Integración con servicios de email (SendGrid, Mailgun)
+- [ ] Integración con servicios de email (SendGrid, Mailgun, SES)
 - [ ] Dashboard web para ver estadísticas
 - [ ] Webhook signature verification más robusta
 - [ ] Soporte para más eventos de Stripe
