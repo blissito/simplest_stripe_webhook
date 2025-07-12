@@ -1,6 +1,6 @@
 # Stripe Webhook - Deno
 
-### by @blissito with love for @brendi projects
+> by @blissito with love for @brendi projects
 
 Un webhook simple para Stripe que solo recibe eventos `payment_intent.succeeded` usando Deno.
 
